@@ -6,8 +6,8 @@
       "name": "@sudobility/shaperouter_lib",
       "devDependencies": {
         "@eslint/js": "^9.39.2",
-        "@sudobility/shaperouter_client": "^0.0.3",
-        "@sudobility/shaperouter_types": "^0.0.2",
+        "@sudobility/shaperouter_client": "^0.0.4",
+        "@sudobility/shaperouter_types": "^0.0.3",
         "@sudobility/types": "^1.9.67",
         "@tanstack/react-query": "^5.90.5",
         "@types/node": "^24.9.1",
@@ -25,8 +25,8 @@
         "zustand": "^5.0.8",
       },
       "peerDependencies": {
-        "@sudobility/shaperouter_client": "^0.0.3",
-        "@sudobility/shaperouter_types": "^0.0.2",
+        "@sudobility/shaperouter_client": "^0.0.4",
+        "@sudobility/shaperouter_types": "^0.0.3",
         "@sudobility/types": "^1.9.67",
         "@tanstack/react-query": ">=5.0.0",
         "react": ">=18.0.0",
@@ -203,9 +203,9 @@
 
     "@standard-schema/spec": ["@standard-schema/spec@1.1.0", "", {}, "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w=="],
 
-    "@sudobility/shaperouter_client": ["@sudobility/shaperouter_client@0.0.3", "", { "peerDependencies": { "@sudobility/shaperouter_types": "^0.0.2", "@sudobility/types": "^1.9.67", "@tanstack/react-query": ">=5.0.0", "react": ">=18.0.0" } }, "sha512-ni6c5n0/ycX88NLjPbpnNqbFlW8KY8lWrV4SKyunt2E6xPOv9C52GxAPQHmsBM6nJbLqxmlDkHR1tY6/sU7i1w=="],
+    "@sudobility/shaperouter_client": ["@sudobility/shaperouter_client@0.0.4", "", { "peerDependencies": { "@sudobility/shaperouter_types": "^0.0.3", "@sudobility/types": "^1.9.67", "@tanstack/react-query": ">=5.0.0", "react": ">=18.0.0" } }, "sha512-fwuHLoKbZV/I8qrR9ZB+3QoaWCQNLoX95p7rEQ/76THWeTI6lq1NHWjwcrDXgJ/DzgXiUdkTUhmR+Ys/8D+vTg=="],
 
-    "@sudobility/shaperouter_types": ["@sudobility/shaperouter_types@0.0.2", "", { "dependencies": { "@sudobility/shapeshyft_engine": "^1.0.4" }, "peerDependencies": { "@sudobility/types": "^1.9.67" } }, "sha512-H+NBlJjQG84Hb7LqZ5QtzlhDwjHuB/ULt1PxFQgKxGa3mXdAMY6rrUUQADYiac49L4QnHLVBy45yRGgq/OsLhA=="],
+    "@sudobility/shaperouter_types": ["@sudobility/shaperouter_types@0.0.3", "", { "dependencies": { "@sudobility/shapeshyft_engine": "^1.0.4" }, "peerDependencies": { "@sudobility/types": "^1.9.67" } }, "sha512-pUAg72myuz7clU8E3GpDMK9PCnP8sMFBRzPzEask1PjjquMvingGcHT8vhBYOtLJSdQ7FKzsNzE3AXOI4nu2tw=="],
 
     "@sudobility/shapeshyft_engine": ["@sudobility/shapeshyft_engine@1.0.4", "", { "dependencies": { "@sudobility/types": "^1.9.67" }, "peerDependencies": { "@anthropic-ai/sdk": "^0.39.0", "@google/generative-ai": "^0.21.0", "groq-sdk": "^0.37.0", "openai": "^4.77.0", "sharp": "^0.35.4" }, "optionalPeers": ["@anthropic-ai/sdk", "@google/generative-ai", "groq-sdk", "openai", "sharp"] }, "sha512-tXMKiE7YMHsS7m+VUwiR2Z3H6dyLd/y8BT5e77c4sPevvLLs4JtGciValvY2EtZ3xRhqu8AFtMWi7aQ5p0gl9w=="],
 
