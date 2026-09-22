@@ -20,7 +20,11 @@
 
 import { useCallback, useMemo, useState } from 'react';
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import {
+  createJSONStorage,
+  persist,
+  type StateStorage,
+} from 'zustand/middleware';
 import type {
   UsageAggregate,
   UsageByEndpoint,
@@ -99,6 +103,36 @@ export interface CostBreakdownItem {
 }
 
 /**
+ * Browser storage when available, with a no-op fallback for SSR and tests.
+ * Zustand's default localStorage adapter becomes `undefined` when the global
+ * is absent, which makes every persisted store update throw in non-browser
+ * environments.
+ */
+const budgetStateStorage: StateStorage = {
+  getItem: name => {
+    try {
+      return globalThis.localStorage?.getItem(name) ?? null;
+    } catch {
+      return null;
+    }
+  },
+  setItem: (name, value) => {
+    try {
+      globalThis.localStorage?.setItem(name, value);
+    } catch {
+      // Keep the in-memory store usable when storage is blocked or unavailable.
+    }
+  },
+  removeItem: name => {
+    try {
+      globalThis.localStorage?.removeItem(name);
+    } catch {
+      // Storage cleanup is best-effort in non-browser environments.
+    }
+  },
+};
+
+/**
  * Persisted budget store
  */
 interface BudgetStoreState {
@@ -145,6 +179,7 @@ export const useBudgetStore = create<BudgetStoreState>()(
     }),
     {
       name: 'shaperouter-budgets',
+      storage: createJSONStorage<BudgetStoreState>(() => budgetStateStorage),
     }
   )
 );
