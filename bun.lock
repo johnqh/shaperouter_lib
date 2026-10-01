@@ -6,7 +6,7 @@
       "name": "@sudobility/shaperouter_lib",
       "devDependencies": {
         "@eslint/js": "^9.39.2",
-        "@sudobility/shaperouter_client": "^0.0.7",
+        "@sudobility/shaperouter_client": "^0.0.9",
         "@sudobility/shaperouter_types": "^0.0.6",
         "@sudobility/types": "^1.9.68",
         "@tanstack/react-query": "^5.90.5",
@@ -25,7 +25,7 @@
         "zustand": "^5.0.8",
       },
       "peerDependencies": {
-        "@sudobility/shaperouter_client": "^0.0.7",
+        "@sudobility/shaperouter_client": "^0.0.9",
         "@sudobility/shaperouter_types": "^0.0.6",
         "@sudobility/types": "^1.9.68",
         "@tanstack/react-query": ">=5.0.0",
@@ -203,7 +203,7 @@
 
     "@standard-schema/spec": ["@standard-schema/spec@1.1.0", "", {}, "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w=="],
 
-    "@sudobility/shaperouter_client": ["@sudobility/shaperouter_client@0.0.7", "", { "peerDependencies": { "@sudobility/shaperouter_types": "^0.0.6", "@sudobility/types": "^1.9.68", "@tanstack/react-query": ">=5.0.0", "react": ">=18.0.0" } }, "sha512-UhxIfbqUdqLAis9RYqZDzfKatLiCA038cc4Tiyy5ublKhuSyKNAmoZngxYxoUMSww3H/hX1VTrWFXVFTiGjnhg=="],
+    "@sudobility/shaperouter_client": ["@sudobility/shaperouter_client@0.0.9", "", { "peerDependencies": { "@sudobility/shaperouter_types": "^0.0.6", "@sudobility/types": "^1.9.68", "@tanstack/react-query": ">=5.0.0", "react": ">=18.0.0" } }, "sha512-10QwkXHxJDisAX1yCDYjzRUB4HU4Xf8wS5NteJlvKcBxdqXzKtb4elVjqpRsWy34+LWEzxvNE2AE2tKKLQcSFA=="],
 
     "@sudobility/shaperouter_types": ["@sudobility/shaperouter_types@0.0.6", "", { "dependencies": { "@sudobility/shapeshyft_engine": "^1.0.8" }, "peerDependencies": { "@sudobility/types": "^1.9.68" } }, "sha512-Io8ywBt66sPEnCES5nwjKJvABCg5Mc3ZatYZl4ZRwNLsNl6we/USCHuW2NrTSalA2WYO/1sitDwUa3dEzJacoA=="],
 
